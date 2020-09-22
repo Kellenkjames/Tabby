@@ -18,6 +18,11 @@
 const buttonTabs = document.querySelectorAll('.tab')
 const tabContent = document.querySelectorAll('.tab-content')
 
+// Loop through the tabbed content
+tabContent.forEach(item => {
+    console.log(item)
+})
+
 buttonTabs.forEach(button => {
     button.addEventListener('click', event => {
         // If element is clicked, toggle class
