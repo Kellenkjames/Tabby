@@ -37,15 +37,32 @@ buttonTabs.forEach(button => {
     button.addEventListener('click', event => {
 
         // If the button clicked has the same data-attribute as a section, show that content
-        if (button.dataset.theme === 'pokemon') {
+        if (button.dataset.theme === 'digimon') {
+            digimonBtn.classList.add('is-selected')
+            digimon.classList.add('is-selected')
+            tamagotchiBtn.classList.remove('is-selected')
+            tamagotchi.classList.remove('is-selected')
+            pokemonBtn.classList.remove('is-selected')
+            pokemon.classList.remove('is-selected')
+        }
+
+        else if (button.dataset.theme === 'pokemon') {
             digimonBtn.classList.remove('is-selected')
             digimon.classList.remove('is-selected')
+            tamagotchiBtn.classList.remove('is-selected')
+            tamagotchi.classList.remove('is-selected')
             pokemonBtn.classList.add('is-selected')
             pokemon.classList.add('is-selected')
         }
 
-        
-
-        
+        else if (button.dataset.theme === 'tamagotchi') {
+            digimonBtn.classList.remove('is-selected')
+            digimon.classList.remove('is-selected')
+            tamagotchiBtn.classList.add('is-selected')
+            tamagotchi.classList.add('is-selected')
+            pokemonBtn.classList.remove('is-selected')
+            pokemon.classList.remove('is-selected')
+        }
+  
     })
 })
