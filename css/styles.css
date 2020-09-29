@@ -84,10 +84,10 @@ button {
 }
 
 .tab-content {
-  display: none;
   padding: 2.5em;
   border: 0.5em solid var(--border-color);
   background-color: white;
+  display: none;
 }
 
 .tab-content.is-selected {
