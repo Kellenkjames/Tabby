@@ -1,23 +1,5 @@
-/* How this component works (in my own words) 
-
-Overview: The tabbed component works by associating data-attributes from the tab to the tab content. What is happening behind the scenes is the user clicks on a tab and we are displaying the content from the tab and tab content because they match one another by data-attribute
-
-STEPS:
-
-1. Store the tab and tabContents in variables
-2. Loop through the TABS with a forEach
-3. Inside the loop, attach an event handler (click) on each tab
-4. Find and store the tab that was clicked into variable (we need the data-attribute)
-5. Find and store the tabContent into a variable - this is where the data-attributes need to MATCH 
-6. Loop through the tabs again and remove the default class (use alias)
-7. Add the class to the clicked TAB
-8. Loop through the tabContents and remove the default class (use alias)
-9. Add the class to the tabContent that matches the TAB
-
-*/
-
 const tabby = document.querySelector('.tabby') 
-const tabs = Array.from(tabby.querySelectorAll('.tab'))
+const tabs = Array.f5rom(tabby.querySelectorAll('.tab'))
 const tabContents = Array.from(tabby.querySelectorAll('.tab-content'))
 
 tabs.forEach(tab => {
