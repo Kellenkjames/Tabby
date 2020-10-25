@@ -1,5 +1,5 @@
 const tabby = document.querySelector('.tabby') 
-const tabs = Array.f5rom(tabby.querySelectorAll('.tab'))
+const tabs = Array.from(tabby.querySelectorAll('.tab'))
 const tabContents = Array.from(tabby.querySelectorAll('.tab-content'))
 
 tabs.forEach(tab => {
