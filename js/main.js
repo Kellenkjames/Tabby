@@ -1,8 +1,8 @@
 const tabby = document.querySelector('.tabby')
 const tabsList = tabby.querySelector('.tabs')
 
-const tabs = Array.from(tabby.querySelectorAll('.tab'))
-const tabContents = Array.from(tabby.querySelectorAll('.tab-content'))
+const tabs = [...tabby.querySelectorAll('.tab')]
+const tabContents = [...tabby.querySelectorAll('.tab-content')]
 
 tabsList.addEventListener('click', event => {
     const tab = event.target
